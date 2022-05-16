@@ -8,12 +8,10 @@ app.use(morgan('combine'));
 app.use(bodyParser.json());
 app.use(cors());
 
-// app.post('/register', (req, res) => {
-//   res.send({
-//     message: `Hello ${req.body.email}, user was registered`
-//   })
-// });
-
-console.log('hello');
+app.get('/health-check', (req, res) => {
+  res.send({
+    message: "Healthy"
+  })
+});
 
 app.listen(process.env.PORT || 8081);

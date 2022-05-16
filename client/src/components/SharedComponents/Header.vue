@@ -1,12 +1,12 @@
 <template>
-  <div class="header">
+  <div class="my-header">
     <h1>JPMC Header</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'header'
+  name: 'AppHeader'
 }
 </script>
 
